@@ -10,7 +10,7 @@ export default function Events() {
       <div className="container">
         <SectionReveal>
           <h2 className="section-title">Wedding Events</h2>
-          <p className="section-subtitle">Join us as we celebrate this sacred union across two beautiful ceremonies.</p>
+          <p className="section-subtitle">Join us as we celebrate the union of two hearts</p>
         </SectionReveal>
 
         <div className={styles.cards}>
