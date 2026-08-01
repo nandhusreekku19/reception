@@ -10,14 +10,14 @@ export default function Footer() {
         <p className={styles.thanks}>Thank you for being a part of our story.</p>
         <p className={styles.date}>{couple.weddingDay}, {couple.weddingDateDisplay}</p>
 
-        <div className={styles.social}>
+        {/* <div className={styles.social}>
           <a href={socialLinks.instagram} aria-label="Instagram" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
           <a href={socialLinks.facebook} aria-label="Facebook" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
           <a href={socialLinks.whatsapp} aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
-        </div>
+        </div> */}
 
         <p className={styles.madeWith}>
-          Made with <FaHeart aria-hidden="true" className={styles.heartIcon} /> for Sreekanth &amp; Nayana
+          sreekanth <FaHeart aria-hidden="true" className={styles.heartIcon} /> Nayana
         </p>
       </div>
     </footer>
