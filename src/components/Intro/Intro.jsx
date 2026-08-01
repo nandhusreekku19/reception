@@ -34,8 +34,8 @@ export default function Intro() {
           >
             <img src={ganeshaIcon} alt="" className={styles.ganesha} aria-hidden="true" />
 
-            <span className={styles.invocation}>ഓം ഗം ഗണപതയേ നമഃ</span>
-
+            {/* <span className={styles.invocation}>ഓം ഗം ഗണപതയേ നമഃ</span> */}
+            <span className={styles.invocation}>Om Gam Ganapataye Namaha</span>
             <span className={styles.eyebrow}>{couple.tagline}</span>
 
             <h1 className={styles.names}>
@@ -44,7 +44,7 @@ export default function Intro() {
 
             <WaxSeal onClick={handleOpen} />
 
-            <span className={styles.hint}>Tap the seal to open</span>
+            <span className={styles.hint}>Tap the seal</span>
           </motion.div>
         </motion.div>
       )}

@@ -53,6 +53,7 @@ export const brideFamily = {
   sibling: 'Sibling: Sivajith',
   address: 'Sivakripa (H), Chathamkuzhiyil, Kanniparamba, Mavoor, Calicut',
   photo: null, // place image at src/assets/images/bride.jpg and import it
+  phone: '9847936219',
 }
 
 export const events = [
@@ -62,39 +63,39 @@ export const events = [
     subtitle: 'Marriage will be solemnised',
     date: 'Sunday, 06 September 2026',
     malayalamDate: '1202 Chingam 21',
-    time: '11:00 AM – 11:30 AM',
+    time: '10:30 AM – 11:30 AM',
     venueName: 'Wedland Convention Centre',
     venueAddress: 'Peruvayal, Calicut',
     mapUrl: 'https://www.google.com/maps/place/Wedland+Convention+Centre/@11.2618305,75.9049263,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba645179af4cb9b:0xff87c9056d0ba592!8m2!3d11.2618252!4d75.9075012!16s%2Fg%2F11j8nwkn9l',
     lat: 11.2618252,
     lng: 75.9075012,
   },
-  {
-    id: 'reception',
-    title: 'Wedding Reception',
-    subtitle: 'Celebration & Feast',
-    date: 'Sunday, 06 September 2026',
-    malayalamDate: '1202 Chingam 21',
-    time: '5:30 PM – 9:30 PM',
-    venueName: 'City Palace Auditorium',
-    venueAddress: 'BC Road, Beypore, Calicut',
-    mapUrl: 'https://www.google.com/maps/place/CITY+PALACE+AUDITORIUM/@11.1809007,75.8068627,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba65103d7cfa563:0xce4ba61af981e7fd!8m2!3d11.1808954!4d75.8094376!16s%2Fg%2F11fmp9qf75',
-    lat: 11.1808954,
-    lng: 75.8094376,
-  },
+  // {
+  //   id: 'reception',
+  //   title: 'Wedding Reception',
+  //   subtitle: 'Celebration & Feast',
+  //   date: 'Sunday, 06 September 2026',
+  //   malayalamDate: '1202 Chingam 21',
+  //   time: '5:30 PM – 9:30 PM',
+  //   venueName: 'City Palace Auditorium',
+  //   venueAddress: 'BC Road, Beypore, Calicut',
+  //   mapUrl: 'https://www.google.com/maps/place/CITY+PALACE+AUDITORIUM/@11.1809007,75.8068627,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba65103d7cfa563:0xce4ba61af981e7fd!8m2!3d11.1808954!4d75.8094376!16s%2Fg%2F11fmp9qf75',
+  //   lat: 11.1808954,
+  //   lng: 75.8094376,
+  // },
 ]
 
-export const contactNumbers = [
-  { name: 'Anandkumar P.B', phone: '9446547194' },
-  { name: 'Jayakrishnan C.K', phone: '9847936219' },
-]
+// export const contactNumbers = [
+//   // { name: 'Anandkumar P.B', phone: '9446547194' },
+//   { name: 'Jayakrishnan C.K', phone: '9847936219' },
+// ]
 
 export const gallery = [
   { id: 1, src: engagement1, alt: 'Engagement photo 1', tall: true },
   { id: 2, src: engagement2, alt: 'Engagement photo 2', tall: true },
-  { id: 3, src: engagement5, alt: 'Engagement photo 3' },
-  { id: 4, src: engagement4, alt: 'Engagement photo 4' },
-  { id: 5, src: engagement3, alt: 'Engagement photo 5' },
+  // { id: 3, src: engagement5, alt: 'Engagement photo 3' },
+  // { id: 4, src: engagement4, alt: 'Engagement photo 4' },
+  // { id: 5, src: engagement3, alt: 'Engagement photo 5' },
   { id: 6, src: engagement6, alt: 'Engagement photo 6', tall: true },
   { id: 7, src: engagement7, alt: 'Engagement photo 7', tall: true },
 ]

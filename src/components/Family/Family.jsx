@@ -19,6 +19,7 @@ function FamilyCard({ data, variant, delay, role }) {
       )}
       <p className={styles.address}>
         <FaMapMarkerAlt aria-hidden="true" /> {data.address}
+        <a className={styles.phoneNumber} href={`tel:${data.phone}`}>{data.phone}</a>
       </p>
     </SectionReveal>
   )
