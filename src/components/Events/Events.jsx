@@ -1,6 +1,7 @@
 import { FaCalendarAlt, FaClock, FaMapMarkerAlt, FaDirections, FaPhoneAlt } from 'react-icons/fa'
 import SectionReveal from '../SectionReveal/SectionReveal.jsx'
-import { events, contactNumbers } from '../../utils/weddingData.js'
+import { events } from '../../utils/weddingData.js'
+// import { events, contactNumbers } from '../../utils/weddingData.js'
 import styles from './Events.module.css'
 
 export default function Events() {
@@ -59,7 +60,7 @@ export default function Events() {
           ))}
         </div>
 
-        <div className={styles.extras}>
+        {/* <div className={styles.extras}>
           <SectionReveal variant="fade" delay={0.1} className={`${styles.extraCard} glass-card`}>
             <FaPhoneAlt className={styles.extraIcon} aria-hidden="true" />
             <h4>Contact</h4>
@@ -72,7 +73,7 @@ export default function Events() {
               ))}
             </ul>
           </SectionReveal>
-        </div>
+        </div> */}
       </div>
     </section>
   )
