@@ -1,0 +1,10 @@
+.countdown {
+  background: var(--c-cream);
+  text-align: center;
+}
+
+.wrap {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}

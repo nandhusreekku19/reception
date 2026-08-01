@@ -1,0 +1,234 @@
+@import './theme.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--heading);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+::selection {
+  background: var(--c-gold);
+  color: var(--c-warm-white);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--c-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--c-gold);
+  border-radius: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  position: relative;
+  padding: 96px 0;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 64px 0;
+  }
+  body {
+    font-size: 16px;
+  }
+}
+
+.section-eyebrow {
+  display: block;
+  text-align: center;
+  font-family: var(--font-devanagari);
+  color: var(--c-gold-deep);
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+
+.gold-divider {
+  width: 120px;
+  height: 2px;
+  margin: 20px auto 40px;
+  background: var(--gold-gradient);
+  position: relative;
+}
+.gold-divider::before {
+  content: '❋';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--bg-base);
+  color: var(--c-gold);
+  padding: 0 12px;
+  font-size: 1rem;
+}
+
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 36px;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--c-maroon-deep);
+  background: var(--gold-gradient);
+  border-radius: 50px;
+  box-shadow: var(--shadow-gold);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.btn-gold:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 0 34px rgba(201, 162, 39, 0.65);
+}
+.btn-gold:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 30px;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--c-gold-deep);
+  background: transparent;
+  border: 1.5px solid var(--c-gold);
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background: var(--c-gold);
+  color: var(--c-warm-white);
+}
+
+/* Ripple effect utility */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+.ripple::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+  transform: scale(1);
+  pointer-events: none;
+  top: var(--ripple-y, 50%);
+  left: var(--ripple-x, 50%);
+  translate: -50% -50%;
+}
+.ripple:active::after {
+  animation: rippleAnim 0.6s ease-out;
+}
+@keyframes rippleAnim {
+  0% { opacity: 0.6; width: 0; height: 0; }
+  100% { opacity: 0; width: 400px; height: 400px; }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(201, 162, 39, 0.35);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

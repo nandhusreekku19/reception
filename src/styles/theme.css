@@ -1,0 +1,41 @@
+:root {
+  /* Palette — Maroon, Gold & White */
+  --c-ivory: #ffffff;
+  --c-cream: #fdf8f0;
+  --c-warm-white: #fffdf9;
+  --c-gold: #c9a227;
+  --c-gold-light: #e8cf82;
+  --c-gold-deep: #9c7a1a;
+  --c-maroon: #5c0f14;
+  --c-maroon-deep: #3d0a0d;
+  --c-temple-red: #8b1e1e;
+
+  /* Semantic */
+  --bg-base: var(--c-ivory);
+  --bg-panel: var(--c-warm-white);
+  --text-primary: #2a1210;
+  --text-muted: #6b5844;
+  --accent: var(--c-gold);
+  --accent-deep: var(--c-gold-deep);
+  --heading: var(--c-maroon);
+
+  /* Fonts */
+  --font-display: 'Playfair Display', serif;
+  --font-script: 'Great Vibes', cursive;
+  --font-serif: 'Playfair Display', serif;
+  --font-body: 'Cormorant Garamond', serif;
+  --font-devanagari: 'Noto Serif Malayalam', 'Noto Serif', serif;
+
+  /* Effects */
+  --shadow-soft: 0 10px 40px rgba(92, 15, 20, 0.12);
+  --shadow-gold: 0 0 24px rgba(201, 162, 39, 0.45);
+  --border-gold: 1px solid rgba(201, 162, 39, 0.5);
+  --radius-lg: 28px;
+  --radius-md: 16px;
+  --radius-sm: 8px;
+
+  --gold-gradient: linear-gradient(135deg, #f6e6b4 0%, #d4af37 30%, #a8791f 60%, #e8cf82 100%);
+  --maroon-gradient: linear-gradient(160deg, #5c0f14 0%, #3d0a0d 100%);
+
+  --container-width: 1180px;
+}

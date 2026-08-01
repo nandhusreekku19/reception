@@ -1,0 +1,81 @@
+.family {
+  background: var(--c-ivory);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  margin-top: 50px;
+}
+
+.card {
+  padding: 32px;
+  text-align: center;
+}
+
+.role {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-gold-deep);
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.role::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  translate: -50% 0;
+  width: 48px;
+  height: 2px;
+  background: var(--c-gold);
+}
+
+.cardTitle {
+  font-family: 'Allura', cursive;
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  color: var(--c-maroon);
+  margin-bottom: 6px;
+}
+
+.parents {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.note {
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.address {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  color: var(--text-muted);
+  margin: 14px 0;
+  text-align: left;
+  max-width: 320px;
+  margin-inline: auto;
+}
+
+.address svg {
+  margin-top: 4px;
+  color: var(--c-gold-deep);
+  flex-shrink: 0;
+}
+
+.sibling {
+  color: #1a1a1a;
+  font-style: italic;
+  margin-bottom: 4px;
+}

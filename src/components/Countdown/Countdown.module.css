@@ -1,0 +1,79 @@
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.compact .stat {
+  width: 72px;
+  height: 72px;
+}
+
+.ring {
+  position: absolute;
+  inset: 0;
+  transform: rotate(-90deg);
+}
+
+.track {
+  fill: none;
+  stroke: rgba(201, 162, 39, 0.18);
+  stroke-width: 6;
+}
+
+.progress {
+  fill: none;
+  stroke: url(#none);
+  stroke: var(--c-gold);
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.statInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.statValue {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--c-maroon);
+  font-weight: 700;
+}
+
+.compact .statValue {
+  font-size: 1.2rem;
+}
+
+.statLabel {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.arrived {
+  text-align: center;
+  font-family: var(--font-display);
+  color: var(--c-maroon);
+  font-size: 1.3rem;
+  padding: 20px;
+}
+
+@media (max-width: 520px) {
+  .stat { width: 74px; height: 74px; }
+  .statValue { font-size: 1.25rem; }
+}

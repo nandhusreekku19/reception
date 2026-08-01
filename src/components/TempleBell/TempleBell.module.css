@@ -1,0 +1,9 @@
+.bell {
+  transform-origin: top center;
+  display: inline-block;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+}
+.bell svg {
+  width: 100%;
+  height: auto;
+}

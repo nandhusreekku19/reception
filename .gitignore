@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+
+# original full-resolution source photos (huge; resized copies live in src/assets/images/gallery)
+src/assets/engagement_photos
+
+# intermediate working files from image extraction/cropping (not project source)
+scratch_extract
