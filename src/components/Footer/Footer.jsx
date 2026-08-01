@@ -17,7 +17,7 @@ export default function Footer() {
         </div> */}
 
         <p className={styles.madeWith}>
-          sreekanth <FaHeart aria-hidden="true" className={styles.heartIcon} /> Nayana
+          Sreekanth <FaHeart aria-hidden="true" className={styles.heartIcon} /> Nayana
         </p>
       </div>
     </footer>
