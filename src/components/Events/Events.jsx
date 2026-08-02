@@ -24,7 +24,7 @@ export default function Events() {
               <ul className={styles.detailList}>
                 <li>
                   <FaCalendarAlt aria-hidden="true" />
-                  <span>{ev.date} <em>({ev.malayalamDate})</em></span>
+                  <span>{ev.date}<br /><em>({ev.malayalamDate})</em></span>
                 </li>
                 <li>
                   <FaClock aria-hidden="true" />
