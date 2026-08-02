@@ -25,23 +25,19 @@ export default function InvitationPage() {
   return (
     <>
       <Intro />
-      {hasEntered && (
-        <>
-          <Navbar />
-          <main>
-            <Hero />
-            <Family />
-            <Events />
-            <Suspense fallback={SECTION_FALLBACK}>
-              <Gallery />
-            </Suspense>
-            <GuestBook />
-            <CountdownSection />
-          </main>
-          <Footer />
-          <MusicPlayer />
-        </>
-      )}
+      <Navbar />
+      <main>
+        <Hero />
+        <Family />
+        <Events />
+        <Suspense fallback={SECTION_FALLBACK}>
+          <Gallery />
+        </Suspense>
+        <GuestBook />
+        <CountdownSection />
+      </main>
+      <Footer />
+      <MusicPlayer />
     </>
   )
 }
