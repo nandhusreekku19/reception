@@ -23,10 +23,10 @@
 }
 
 .ganesha {
-  width: 90px;
+  width: 100px;
   height: auto;
   margin-bottom: 12px;
-  filter: drop-shadow(0 0 10px rgba(232, 207, 130, 0.5));
+  filter: drop-shadow(0 0 5px rgba(232, 207, 130, 0.5));
 }
 
 .invocation {

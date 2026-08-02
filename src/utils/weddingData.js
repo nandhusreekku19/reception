@@ -93,11 +93,10 @@ export const events = [
 export const gallery = [
   { id: 1, src: engagement1, alt: 'Engagement photo 1', tall: true },
   { id: 2, src: engagement2, alt: 'Engagement photo 2', tall: true },
-  // { id: 3, src: engagement5, alt: 'Engagement photo 3' },
-  // { id: 4, src: engagement4, alt: 'Engagement photo 4' },
-  // { id: 5, src: engagement3, alt: 'Engagement photo 5' },
+  { id: 3, src: engagement3, alt: 'Engagement photo 3', tall: true },
+  { id: 4, src: engagement4, alt: 'Engagement photo 4', tall: true},
+  { id: 5, src: engagement5, alt: 'Engagement photo 5', tall: true },
   { id: 6, src: engagement6, alt: 'Engagement photo 6', tall: true },
-  { id: 7, src: engagement7, alt: 'Engagement photo 7', tall: true },
 ]
 
 export const socialLinks = {
