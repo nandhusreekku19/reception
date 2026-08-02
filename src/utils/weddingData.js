@@ -7,7 +7,7 @@ import engagement3 from '../assets/images/gallery/engagement-3.jpg'
 import engagement4 from '../assets/images/gallery/engagement-4.jpg'
 import engagement5 from '../assets/images/gallery/engagement-5.jpg'
 import engagement6 from '../assets/images/gallery/engagement-6.jpg'
-import engagement7 from '../assets/images/gallery/engagement-7.jpg'
+// import engagement7 from '../assets/images/gallery/engagement-7.jpg'
 
 export const couple = {
   groomFirstName: 'Sreekanth',
