@@ -27,7 +27,7 @@ export default function Gallery() {
               key={img.id}
               variant="scale"
               delay={(i % 4) * 0.08}
-              className={`${styles.tile} ${img.tall ? styles.tall : ''}`}
+              className={styles.tile}
             >
               <button
                 type="button"
