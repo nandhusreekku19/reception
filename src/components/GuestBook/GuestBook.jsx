@@ -22,7 +22,7 @@ export default function GuestBook() {
       return
     }
     setError('')
-    const text = `${emoji} Wedding wishes from ${name.trim()}:\n${message.trim()}`
+    const text = `With Lots of Love From : ${name.trim()}\nMessage: ${emoji} ${message.trim()}`
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`
     window.open(url, '_blank', 'noopener,noreferrer')
   }
@@ -68,7 +68,7 @@ export default function GuestBook() {
               aria-label="Your message"
             />
             {error && <p className={styles.error}>{error}</p>}
-            <button type="submit" className="btn-gold ripple">
+            <button type="submit" className="btn-gold flat ripple">
               <FaWhatsapp /> Send via WhatsApp
             </button>
           </form>

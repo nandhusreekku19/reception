@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -157,6 +158,11 @@ h1, h2, h3, h4 {
 }
 .btn-gold:active {
   transform: translateY(0) scale(0.98);
+}
+
+/* Flat modifier: same button, no gradient fill */
+.btn-gold.flat {
+  background: var(--c-gold);
 }
 
 .btn-outline {

@@ -48,7 +48,7 @@ export default function Events() {
 
               <div className={styles.actions}>
                 <a
-                  className="btn-gold ripple"
+                  className="btn-gold flat ripple"
                   href={ev.mapUrl}
                   target="_blank"
                   rel="noopener noreferrer"

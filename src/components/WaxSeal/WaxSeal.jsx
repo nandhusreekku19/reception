@@ -3,7 +3,7 @@ import styles from './WaxSeal.module.css'
 
 // A gold wax-seal button embossed with a small heart —
 // click to "break the seal" and open the invitation.
-export default function WaxSeal({ onClick, size = 112 }) {
+export default function WaxSeal({ onClick, size = 80 }) {
   return (
     <motion.button
       type="button"
