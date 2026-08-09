@@ -64,7 +64,7 @@ export const events = [
     subtitle: 'Marriage will be solemnised',
     date: 'Sunday, 06 September 2026',
     malayalamDate: '1202 Chingam 21',
-    time: '10:30 AM – 11:30 AM',
+    time: '11:00 AM – 11:30 AM',
     venueName: 'Wedland Convention Centre',
     venueAddress: 'Peruvayal, Calicut',
     mapUrl: 'https://www.google.com/maps/place/Wedland+Convention+Centre/@11.2618305,75.9049263,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba645179af4cb9b:0xff87c9056d0ba592!8m2!3d11.2618252!4d75.9075012!16s%2Fg%2F11j8nwkn9l',
