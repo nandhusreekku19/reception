@@ -39,7 +39,7 @@ export default function Intro() {
             <span className={styles.eyebrow}>{couple.tagline}</span>
 
             <h1 className={styles.names}>
-              {couple.brideFull} <span className={styles.amp}>&amp;</span> {couple.groomFull}
+              {couple.groomFull} <span className={styles.amp}>&amp;</span> {couple.brideFull}
             </h1>
 
             <WaxSeal onClick={handleOpen} />

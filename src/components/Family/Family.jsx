@@ -34,8 +34,8 @@ export default function Family() {
         </SectionReveal>
 
         <div className={styles.grid}>
-          <FamilyCard data={brideFamily} variant="left" delay={0} role="The Bride" />
-          <FamilyCard data={groomFamily} variant="right" delay={0.15} role="The Groom" />
+          <FamilyCard data={groomFamily} variant="left" delay={0} role="The Groom" />
+          <FamilyCard data={brideFamily} variant="right" delay={0.15} role="The Bride" />
         </div>
       </div>
     </section>

@@ -29,9 +29,9 @@ export default function Hero() {
         <span className={styles.eyebrow}>{couple.tagline}</span>
 
         <h1 className={styles.title}>
-          <span className={styles.name}>{couple.brideFull}</span>
-          <span className={styles.heart}>❤</span>
           <span className={styles.name}>{couple.groomFull}</span>
+          <span className={styles.heart}>❤</span>
+          <span className={styles.name}>{couple.brideFull}</span>
         </h1>
 
         <WeddingCalendar />
