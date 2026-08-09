@@ -7,7 +7,7 @@ const EMOJIS = ['😍', '🎉', '💐', '🙏', '❤️', '✨', '💍', '🌸']
 
 // Wishes are sent directly to the couple over WhatsApp rather than stored —
 // no backend, and every guest's message actually reaches someone.
-const WHATSAPP_NUMBER = '917306632553'
+const WHATSAPP_NUMBER = '918606746065'
 
 export default function GuestBook() {
   const [name, setName] = useState('')

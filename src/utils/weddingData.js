@@ -38,6 +38,7 @@ export const groomFamily = {
   sibling: 'Sibling: Sreelakshmi',
   address: 'Ashirvad House, Thachatt Temple Road, Beypore, Calicut',
   photo: null, // place image at src/assets/images/groom.jpg and import it
+  phone: '8606746065',
 }
 
 export const brideFamily = {
